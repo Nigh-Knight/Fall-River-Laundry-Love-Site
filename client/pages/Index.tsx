@@ -235,9 +235,9 @@ export default function Index() {
             <div className="flex flex-col items-center justify-start">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gray-700 flex-shrink-0 mb-6 md:mb-8">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Face269c45895465387439bd5ba59a80e%2F9933b43721074eb3a23c836de309aba7?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Face269c45895465387439bd5ba59a80e%2F466021496b9c46f096eafa0936214782"
                   alt="Kepler Pierre"
-                  className="w-full h-full object-cover"
+                  className="w-[400px] h-full object-cover self-stretch"
                 />
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-wide text-center">
