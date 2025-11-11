@@ -23,7 +23,9 @@
   "dependencies": {
     "dotenv": "^17.2.1",
     "googleapis": "^165.0.0",
+    "pnpm": "^10.21.0",
     "sweetalert2": "^11.26.3",
+    "vercel": "^48.9.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {
