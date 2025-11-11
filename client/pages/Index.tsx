@@ -248,15 +248,11 @@ export default function Index() {
             {/* Right - Content */}
             <div className="space-y-4 text-white border border-[rgb(55_65_81)] rounded-[1rem] p-6 md:p-8">
               <p className="text-sm md:text-base leading-relaxed">
-                Hello, my name is Kepler, and I am the creator of EccoMuse. I'm a music enthusiast and a developer, currently based in Massachusetts, USA, and studying as a University student.
+                Hello, my name is Kepler, and I am the creator of this site. I'm a music enthusiast and a developer, currently based in Massachusetts, USA, and studying as a University student.
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">
-                I started EccoMuse for multiple reasons. I needed money to support myself through college. I was bored making blanks with friends, and I realized the lack of an app that could do what EccoMuse can do: make blanks between artists and listeners.
-              </p>
-
-              <p className="text-sm md:text-base leading-relaxed">
-                I'm the sole developer of EccoMuse and quick to respond to messages. I'm always excited to collaborate with others.
+                I'm the sole developer of this site and quick to respond to messages. I'm always excited to collaborate with others.
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">
