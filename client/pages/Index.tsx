@@ -222,6 +222,58 @@ export default function Index() {
       </section>
 
       <Footer />
+
+      {/* About The Creator Section */}
+      <section className="bg-black py-16 md:py-24">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-white uppercase text-center mb-12 md:mb-16">
+            About The Site Creator
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 md:gap-12">
+            {/* Left - Image and Name */}
+            <div className="flex flex-col items-center justify-start">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gray-700 flex-shrink-0 mb-6 md:mb-8">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Face269c45895465387439bd5ba59a80e%2F9933b43721074eb3a23c836de309aba7?format=webp&width=800"
+                  alt="Kepler Pierre"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-wide text-center">
+                KEPLER
+              </h3>
+            </div>
+
+            {/* Right - Content */}
+            <div className="space-y-4 text-white border border-[rgb(55_65_81)] rounded-[1rem] p-6 md:p-8">
+              <p className="text-sm md:text-base leading-relaxed">
+                Hello, my name is Kepler, and I am the creator of EccoMuse. I'm a music enthusiast and a developer, currently based in Massachusetts, USA, and studying as a University student.
+              </p>
+
+              <p className="text-sm md:text-base leading-relaxed">
+                I started EccoMuse for multiple reasons. I needed money to support myself through college. I was bored making blanks with friends, and I realized the lack of an app that could do what EccoMuse can do: make blanks between artists and listeners.
+              </p>
+
+              <p className="text-sm md:text-base leading-relaxed">
+                I'm the sole developer of EccoMuse and quick to respond to messages. I'm always excited to collaborate with others.
+              </p>
+
+              <p className="text-sm md:text-base leading-relaxed">
+                My contact is{' '}
+                <a href="https://instagram.com/kepler.dp" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  kepler.dp
+                </a>
+                {' '}on Instagram and{' '}
+                <a href="mailto:name.of.kepler@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  name.of.kepler@gmail.com
+                </a>
+                {' '}on email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
