@@ -33,3 +33,4 @@ dist-ssr
 # Google Service Account keys
 *-service-account.json
 service-account-*.json
+.vercel
