@@ -2,8 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "functions": {
-    "api/submit-form.ts": {
-      "maxDuration": 10
+    "api/**/*.ts": {
+      "maxDuration": 10,
+      "includeFiles": "shared/**"
     }
   },
   "rewrites": [

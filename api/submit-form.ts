@@ -1,11 +1,11 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { preRegistrationSchema } from "../shared/validation";
-import { appendToSheet } from "./lib/google-sheets";
+import { appendToSheet } from "./_helpers/google-sheets";
 import type { FormSubmissionResponse } from "../shared/types";
 
 export default async function handler(
   req: VercelRequest,
-  res: VercelResponse<FormSubmissionResponse>
+  res: VercelResponse
 ) {
   // Only allow POST requests
   if (req.method !== "POST") {
