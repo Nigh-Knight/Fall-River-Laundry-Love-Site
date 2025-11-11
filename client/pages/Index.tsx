@@ -16,16 +16,16 @@ export default function Index() {
               <h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold text-[#171A1F] uppercase leading-tight tracking-wide text-center lg:text-left">
                 Fall River Laundry Love
               </h1>
-              
+
               <h2 className="text-3xl md:text-4xl lg:text-[48px] font-bold text-[#0072D5] uppercase leading-tight text-center lg:text-left">
                 Clean Clothes and a Helping Hand
               </h2>
-              
+
               <p className="text-lg md:text-xl text-[#171A1F] leading-relaxed text-center lg:text-left">
                 Fall River Laundry Love provides free laundry services to those in need, fostering dignity, community, and support. We believe that everyone deserves the comfort and confidence that comes with clean clothes.
               </p>
             </div>
-            
+
             {/* Right Column - Image */}
             <div className="relative">
               <img
@@ -35,7 +35,7 @@ export default function Index() {
               />
             </div>
           </div>
-          
+
           {/* Decorative Hearts - Hidden on mobile */}
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/64eda7930642d2eaf11082ba9c28c742ea2ae02a?width=200"
@@ -58,7 +58,7 @@ export default function Index() {
           <h2 className="text-3xl md:text-4xl lg:text-[48px] font-bold text-[#171A1F] uppercase text-center mb-8 md:mb-12 tracking-wide">
             photos of past Events
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               'https://api.builder.io/api/v1/image/assets/TEMP/94beec0f1443c377eae579d930d2018066885a28?width=718',
@@ -86,7 +86,7 @@ export default function Index() {
           <h2 className="text-3xl md:text-4xl lg:text-[48px] font-bold text-[#171A1F] uppercase text-center mb-8 md:mb-12 tracking-wide">
             Our Locations & Next Event Dates
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
             {/* Location 1 */}
             <div className="bg-[#F0F8FF] p-8 md:p-12 text-center space-y-4 border border-[#DEE1E6]">
@@ -100,7 +100,7 @@ export default function Index() {
                 Next Event: October 26, 2024
               </p>
             </div>
-            
+
             {/* Location 2 */}
             <div className="bg-[#F0F8FF] p-8 md:p-12 text-center space-y-4 border border-[#DEE1E6]">
               <h3 className="text-2xl md:text-3xl font-bold text-[#171A1F] tracking-tight">
@@ -123,12 +123,12 @@ export default function Index() {
           <h2 className="text-3xl md:text-4xl lg:text-[48px] font-bold text-[#171A1F] uppercase text-center mb-8 md:mb-12 tracking-wide">
             About the Fall River Laundry Love
           </h2>
-          
+
           <div className="space-y-6 text-center">
             <p className="text-lg leading-relaxed text-[#171A1F]">
               Fall River Laundry Love is a non-profit organization dedicated to serving our community by offering free laundry services to individuals and families experiencing homelessness, poverty, and other hardships. We believe in the dignity of having clean clothes and the positive impact it has on self-esteem and daily life. Our events provide a safe, welcoming, and hygienic environment for everyone to wash their clothes, fostering a sense of community and support.
             </p>
-            
+
             <p className="text-lg leading-relaxed text-[#171A1F]">
               Beyond providing practical assistance, Fall River Laundry Love aims to connect people, build relationships, and offer a space where everyone feels valued and respected. We collaborate with local laundromats and volunteers to host regular events, ensuring that clean clothes are accessible to those who need them most. Join us in making a difference, one load of laundry at a time.
             </p>
@@ -142,11 +142,11 @@ export default function Index() {
           <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-[#171A1F] uppercase mb-6 md:mb-8 tracking-wide">
             Track Your Turn with the Queuert App!
           </h2>
-          
+
           <p className="text-xl md:text-2xl lg:text-3xl text-[#171A1F] leading-relaxed mb-8 md:mb-12 max-w-2xl mx-auto">
             The Queuert App simplifies your Laundry Love experience. Check event schedules, find locations, and join the virtual queue from your phone, so you can spend less time waiting and more time connecting.
           </p>
-          
+
           <button className="px-12 md:px-16 py-3 md:py-4 text-lg md:text-xl font-medium text-[#005CAD] bg-transparent border-2 border-[#005CAD] rounded-lg hover:bg-[#005CAD] hover:text-white transition-colors shadow-lg">
             Join the Waitlist
           </button>
@@ -159,12 +159,12 @@ export default function Index() {
           <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-[#171A1F] uppercase text-center mb-8 md:mb-12 tracking-wide">
             Sign Up for Our Next Event
           </h2>
-          
+
           <div className="bg-white border-2 border-[#DEE1E6] shadow-lg p-6 md:p-10">
             <h3 className="text-2xl md:text-3xl font-bold text-[#171A1F] uppercase text-center mb-8">
               Sign Up for Our Next Event
             </h3>
-            
+
             <form className="space-y-6">
               <div>
                 <label htmlFor="fullName" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
@@ -177,7 +177,7 @@ export default function Index() {
                   className="w-full px-3 py-4 border border-[#DEE1E6] text-sm text-[#565D6D] placeholder:text-[#565D6D] focus:outline-none focus:ring-2 focus:ring-[#0072D5]"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="phone" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
                   Phone Number
@@ -189,7 +189,7 @@ export default function Index() {
                   className="w-full px-3 py-4 border border-[#DEE1E6] text-sm text-[#565D6D] placeholder:text-[#565D6D] focus:outline-none focus:ring-2 focus:ring-[#0072D5]"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="livingSituation" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
                   Living Situation
@@ -205,14 +205,14 @@ export default function Index() {
                   <option>Prefer not to say</option>
                 </select>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full py-3 md:py-4 bg-[#0072D5] text-white text-lg md:text-xl font-medium hover:bg-[#005CAD] transition-colors"
               >
                 Join the Queue
               </button>
-              
+
               <p className="text-sm text-[#565D6D] text-center italic leading-relaxed">
                 Your information will be kept strictly confidential and used solely for event coordination and support purposes.
               </p>
@@ -248,7 +248,7 @@ export default function Index() {
             {/* Right - Content */}
             <div className="space-y-4 text-white border border-[rgb(55_65_81)] rounded-[1rem] p-6 md:p-8">
               <p className="text-sm md:text-base leading-relaxed">
-                Hello, my name is Kepler, and I am the creator of this site. I'm a music enthusiast and a developer, currently based in Massachusetts, USA, and studying as a University student.
+                Hello, my name is Kepler, and I am the creator of this site. I'm a music enthusiast and a developer, currently based in Massachusetts and studying as a University student.
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">
@@ -257,8 +257,8 @@ export default function Index() {
 
               <p className="text-sm md:text-base leading-relaxed">
                 My contact is{' '}
-                <a href="https://instagram.com/kepler.dp" className="text-blue-400 hover:text-blue-300 transition-colors">
-                  kepler.dp
+                <a href="https://instagram.com/kepler.ep" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  kepler.ep
                 </a>
                 {' '}on Instagram and{' '}
                 <a href="mailto:name.of.kepler@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
@@ -266,6 +266,15 @@ export default function Index() {
                 </a>
                 {' '}on email.
               </p>
+
+              <div className="mt-6">
+                <Link
+                  to="/about"
+                  className="inline-block px-8 py-3 bg-[#0072D5] text-white text-base font-medium hover:bg-[#005CAD] transition-colors rounded-lg"
+                >
+                  Learn More About This Site
+                </Link>
+              </div>
             </div>
           </div>
         </div>
