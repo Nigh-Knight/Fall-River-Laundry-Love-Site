@@ -36,13 +36,15 @@ The Google Sheets Form Integration system will replace the existing Express serv
 - Form fields for pre-registration data
 - Client-side validation using React Hook Form + Zod
 - Loading states during submission
-- Success/error message display
+- Success/error message display using SweetAlert2
 - Responsive design with Tailwind CSS
 
 **Form Fields**:
 - Full Name (text, required)
 - Phone Number (tel, required)
-- Living Situation (text, required)
+- Living Situation (select dropdown, required)
+  - Options: Homeless, Sheltered, Homed, Other
+  - If "Other" is selected, show text input for custom description
 
 ### 2. Vercel Function API
 
@@ -112,9 +114,10 @@ interface PreRegistrationData {
 
 ### Client-Side Error Handling
 
-1. **Form Validation Errors**: Display field-specific validation messages
-2. **Network Errors**: Show generic "Please try again" message
-3. **Server Errors**: Display server-provided error messages
+1. **Form Validation Errors**: Display field-specific validation messages inline
+2. **Network Errors**: Show SweetAlert2 error modal with "Please try again" message
+3. **Server Errors**: Display SweetAlert2 error modal with server-provided error messages
+4. **Success Messages**: Display SweetAlert2 success modal upon successful submission
 
 ### Server-Side Error Handling
 

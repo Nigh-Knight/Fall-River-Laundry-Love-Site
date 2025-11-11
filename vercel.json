@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/submit-form.ts": {
+      "maxDuration": 10
+    }
+  }
+}

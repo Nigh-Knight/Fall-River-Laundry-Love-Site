@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { PreRegistrationForm } from "../components/PreRegistrationForm";
 
 export default function Index() {
   return (
@@ -162,61 +163,14 @@ export default function Index() {
 
           <div className="bg-white border-2 border-[#DEE1E6] shadow-lg p-6 md:p-10">
             <h3 className="text-2xl md:text-3xl font-bold text-[#171A1F] uppercase text-center mb-8">
-              Sign Up for Our Next Event
+              Pre-Registration Form
             </h3>
 
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="fullName" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="fullName"
-                  placeholder="John Doe"
-                  className="w-full px-3 py-4 border border-[#DEE1E6] text-sm text-[#565D6D] placeholder:text-[#565D6D] focus:outline-none focus:ring-2 focus:ring-[#0072D5]"
-                />
-              </div>
+            <PreRegistrationForm />
 
-              <div>
-                <label htmlFor="phone" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="(123) 456-7890"
-                  className="w-full px-3 py-4 border border-[#DEE1E6] text-sm text-[#565D6D] placeholder:text-[#565D6D] focus:outline-none focus:ring-2 focus:ring-[#0072D5]"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="livingSituation" className="block text-xs font-medium text-[#171A1F] mb-2 uppercase">
-                  Living Situation
-                </label>
-                <select
-                  id="livingSituation"
-                  className="w-full px-3 py-4 border border-[#DEE1E6] text-sm text-[#171A1F] bg-white focus:outline-none focus:ring-2 focus:ring-[#0072D5] appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjU0NjMgNS41MTYzMUMxMS44MDc5IDUuMjU0NjUgMTIuMjMyMSA1LjI1NDY1IDEyLjQ5MzcgNS41MTYzMUMxMi43NTU0IDUuNzc3OTYgMTIuNzU1NCA2LjIwMjA3IDEyLjQ5MzcgNi40NjM3M0w4LjQ3MzY5IDEwLjQ4MzdDOC4yMTIwNiAxMC43NDU0IDcuNzg3OTUgMTAuNzQ1NCA3LjUyNjMxIDEwLjQ4MzdMMy41MDYzIDYuNDYzNzNMMy40NjA1IDYuNDEyN0MzLjI0NTg2IDYuMTQ5NTMgMy4yNjEgNS43NjE2IDMuNTA2MyA1LjUxNjMxQzMuNzUxNTkgNS4yNzEwMSA0LjEzOTUzIDUuMjU1ODcgNC40MDI2OCA1LjQ3MDUxTDQuNDUzNzIgNS41MTYzMUw4IDkuMDYyNjFMMTEuNTQ2MyA1LjUxNjMxWiIgZmlsbD0iIzE3MUExRiIvPgo8L3N2Zz4K')] bg-[length:16px_16px] bg-[right_12px_center] bg-no-repeat pr-10"
-                >
-                  <option>Select your living situation</option>
-                  <option>Housed</option>
-                  <option>Homeless</option>
-                  <option>Transitional Housing</option>
-                  <option>Prefer not to say</option>
-                </select>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-3 md:py-4 bg-[#0072D5] text-white text-lg md:text-xl font-medium hover:bg-[#005CAD] transition-colors"
-              >
-                Join the Queue
-              </button>
-
-              <p className="text-sm text-[#565D6D] text-center italic leading-relaxed">
-                Your information will be kept strictly confidential and used solely for event coordination and support purposes.
-              </p>
-            </form>
+            <p className="text-sm text-[#565D6D] text-center italic leading-relaxed mt-6">
+              Your information will be kept strictly confidential and used solely for event coordination and support purposes.
+            </p>
           </div>
         </div>
       </section>
