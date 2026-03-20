@@ -50,13 +50,13 @@ export default function About() {
                 About This Project
               </h3>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                As a university student studying computer science and passionate about making a difference in my community, 
-                I created this website to support the Fall River Laundry Love initiative. This project combines my technical 
+                As a university student studying STS and passionate about making a difference in my community,
+                I created this website to support the Fall River Laundry Love initiative. This project combines my technical
                 skills with my desire to help those in need access essential services with dignity and ease.
               </p>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                The site was built from the ground up using modern web technologies including React, TypeScript, and Tailwind CSS. 
-                My goal was to create a clean, accessible, and user-friendly platform that makes it easy for community members 
+                The site was built from the ground up using modern web technologies including React, TypeScript, and Tailwind CSS.
+                My goal was to create a clean, accessible, and user-friendly platform that makes it easy for community members
                 to learn about Laundry Love events, find locations, and sign up for services.
               </p>
             </div>
@@ -67,13 +67,13 @@ export default function About() {
                 Why I Built This
               </h3>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                I believe that technology should serve people and communities. When I learned about the Fall River Laundry Love 
-                organization and their mission to provide free laundry services to those experiencing hardship, I knew I wanted 
+                I believe that technology should serve people and communities. When I learned about the Fall River Laundry Love
+                organization and their mission to provide free laundry services to those experiencing hardship, I knew I wanted
                 to contribute my skills to help amplify their impact.
               </p>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                This website serves as a digital hub for the organization, making it easier for people to access information, 
-                stay updated on events, and connect with the services they need. As a student, this project has been an 
+                This website serves as a digital hub for the organization, making it easier for people to access information,
+                stay updated on events, and connect with the services they need. As a student, this project has been an
                 incredible learning experience and a meaningful way to give back to my community.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function About() {
                 <li>React Router for navigation</li>
               </ul>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                The site is designed to be fully responsive, accessible, and easy to maintain, ensuring it can grow 
+                The site is designed to be fully responsive, accessible, and easy to maintain, ensuring it can grow
                 alongside the organization's needs.
               </p>
             </div>
@@ -105,23 +105,25 @@ export default function About() {
                 Get In Touch
               </h3>
               <p className="text-lg text-[#171A1F] leading-relaxed">
-                I'm always excited to collaborate with others and discuss new projects. 
+                I'm always excited to collaborate with others and discuss new projects.
                 Feel free to reach out if you have questions about this site or want to connect!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a 
-                  href="https://instagram.com/kepler.ep" 
+                <a
+                  href="https://instagram.com/kepler.ep"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-[#0072D5] text-white text-lg font-medium hover:bg-[#005CAD] transition-colors rounded-lg"
                 >
                   Instagram: @kepler.ep
                 </a>
-                <a 
+                <a
                   href="mailto:name.of.kepler@gmail.com"
-                  className="px-8 py-3 bg-transparent border-2 border-[#0072D5] text-[#0072D5] text-lg font-medium hover:bg-[#0072D5] hover:text-white transition-colors rounded-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 bg-[#0072D5] text-white text-lg font-medium hover:bg-[#005CAD] transition-colors rounded-lg"
                 >
-                  Email Me
+                  email: name.of.kepler@gmail.com
                 </a>
               </div>
             </div>
@@ -129,8 +131,8 @@ export default function About() {
             {/* Personal Note */}
             <div className="space-y-6 text-center">
               <p className="text-lg text-[#565D6D] leading-relaxed italic">
-                "As a student and developer, I'm passionate about using technology to create positive change. 
-                This project represents my commitment to both my craft and my community. I'm the sole developer 
+                "As a student and developer, I'm passionate about using technology to create positive change.
+                This project represents my commitment to both my craft and my community. I'm the sole developer
                 of this site and quick to respond to any feedback or suggestions."
               </p>
               <p className="text-xl font-semibold text-[#171A1F]">

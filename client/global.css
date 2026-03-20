@@ -1,17 +1,13 @@
 /** @import must precede all other statements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  /**
-   * Tailwind CSS theme
-   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
-   * A different format will require also updating the theme in tailwind.config.ts.
-  */
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -44,19 +40,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -119,4 +108,190 @@
     overflow-x: auto;
     white-space: pre;
   }
+}
+
+/* Bubble animation */
+@keyframes bubble-rise {
+  0% {
+    transform: translateY(0) scale(0.4) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bubble-float {
+  animation: bubble-rise linear forwards;
+}
+
+.bubble-container {
+  animation: fade-out 0.5s ease-out 7s forwards;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Section reveal animations */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Animated wave separator */
+@keyframes wave-drift {
+  0% {
+    d: path("M0 60C240 90 480 30 720 60C960 90 1200 30 1440 60V120H0V60Z");
+  }
+  50% {
+    d: path("M0 50C300 20 600 90 900 50C1100 25 1300 80 1440 50V120H0V50Z");
+  }
+  100% {
+    d: path("M0 60C240 90 480 30 720 60C960 90 1200 30 1440 60V120H0V60Z");
+  }
+}
+
+@keyframes wave-drift-mid {
+  0% {
+    d: path("M0 70C360 100 720 40 1080 70C1260 85 1380 50 1440 70V120H0V70Z");
+  }
+  50% {
+    d: path("M0 65C300 35 660 95 1020 65C1200 45 1350 90 1440 65V120H0V65Z");
+  }
+  100% {
+    d: path("M0 70C360 100 720 40 1080 70C1260 85 1380 50 1440 70V120H0V70Z");
+  }
+}
+
+@keyframes wave-drift-front {
+  0% {
+    d: path("M0 80C240 110 480 50 720 80C960 110 1200 50 1440 80V120H0V80Z");
+  }
+  50% {
+    d: path("M0 75C360 45 720 105 1080 75C1260 55 1380 95 1440 75V120H0V75Z");
+  }
+  100% {
+    d: path("M0 80C240 110 480 50 720 80C960 110 1200 50 1440 80V120H0V80Z");
+  }
+}
+
+.wave-back {
+  animation: wave-drift 8s ease-in-out infinite;
+}
+
+.wave-mid {
+  animation: wave-drift-mid 6s ease-in-out infinite;
+}
+
+.wave-front {
+  animation: wave-drift-front 4s ease-in-out infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 114, 213, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0072D5 0%, #00a4ff 50%, #0072D5 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+/* Glowing button effect */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-glow::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-glow:hover::before {
+  opacity: 1;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 114, 213, 0.4), 0 0 60px rgba(0, 114, 213, 0.1);
 }
